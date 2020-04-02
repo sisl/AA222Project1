@@ -5,12 +5,12 @@
 - `make_submission.sh` is a shell script which will create a zip file for submission to gradescope (Unix).
 - `make_submission_gitbash.sh` is a shell script which will create a zip file for submission to gradescope (Windows GitBash).
 - `project1_py` is a folder with starter code for completing the project in python
-- `project1_py/project1.py` contains the function `optimize` in which your code must be written.
-- `project1_py/helpers.py` contains optimization problems, random search, and test functions.
-- `localtest.py` runs tests on `project0_py`
+    - `project1_py/project1.py` contains the function `optimize` in which your code must be written.
+    - `project1_py/helpers.py` contains optimization problems, random search, and test functions.
 - `project1_jl` is a folder with starter code for completing the project in Julia.
-- `project1_jl/project1.jl` contains the function `optimize` in which your code must be written.
-- `project1_jl/helpers.jl` contains optimization problems, random search, and test functions.
+    - `project1_jl/project1.jl` contains the function `optimize` in which your code must be written.
+    - `project1_jl/helpers.jl` contains optimization problems, random search, and test functions.
+- `localtest.py` runs tests on `project0_py`
 - `localtest.jl` runs tests on `project1_jl`
 
 
