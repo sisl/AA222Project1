@@ -7,7 +7,7 @@
 '''
 Note: Do not import any other modules here.
         To import from another file xyz.py here, type
-        import project1.xyz
+        import project1_py.xyz
         However, do not import any modules except numpy in those files.
         It's ok to import modules only in files that are
         not imported here (e.g. for your plotting code).
