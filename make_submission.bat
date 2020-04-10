@@ -1,5 +1,5 @@
 @echo off
-set project="project0"
+set project="project1"
 set py_name="%project%_py"
 set jl_name="%project%_jl"
 set zip_name="%project%.zip"
