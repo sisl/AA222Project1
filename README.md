@@ -12,6 +12,7 @@
 - `localtest.jl` runs tests on `project1_jl`
 - `make_submission.sh` is a shell script which will create a zip file for submission to gradescope (Unix).
 - `make_submission_gitbash.sh` is a shell script which will create a zip file for submission to gradescope (Windows GitBash).
+- `make_submission.bat` is a batch script to create a zip file for submission to gradescope (Windows Command Prompt)
 
 
 ## Rules
