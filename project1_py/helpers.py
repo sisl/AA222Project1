@@ -49,7 +49,6 @@ class OptimizationProblem:
             f (float): evaluation
         '''
         self._ctr += 1
-        assert self._ctr <= self.n, 'Number of allowed function calls exceeded.'
 
         return self._wrapped_f(x)
     
@@ -64,7 +63,6 @@ class OptimizationProblem:
             jac (np.array): jacobian of f wrt x
         '''
         self._ctr += 2
-        assert self._ctr <= self.n, 'Number of allowed function calls exceeded.'
 
         return self._wrapped_g(x)
 
@@ -205,17 +203,24 @@ def test_optimize(optimize):
         # test optimize
         print('Testing optimize...')
         fvals_opt = []
+        any_count_exceeded = False
         for seed in tqdm(range(500)):
             p = test()
             np.random.seed(seed)
             x0 = p.x0()
             xb = optimize(p.f, p.g, x0, p.n, p.count, p.prob)
+            if p.count() > p.n:
+                any_count_exceeded = True
             p._reset()
             fvals_opt.append(p.f(xb))
         
         if np.any(np.isnan(fvals_opt)):
             print('Warning: NaN returned by optimizer. Leaderboard score will be 0.')
             fvals_opt = np.where(np.isnan(fvals_opt), np.inf, fvals_opt)
+
+        if any_count_exceeded:
+            print('Failed %s. Count exceeded.'%p.prob)
+            continue
 
         better = np.array(fvals_random) > np.array(fvals_opt)
 
