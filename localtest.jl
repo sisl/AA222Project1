@@ -27,6 +27,8 @@ elseif length(ARGS) == 1
     if K === nothing
         K = 500
         probnames = [ARGS[1]]
+    else
+        probnames = sort(collect(keys(PROBS)))
     end
 elseif length(ARGS) == 2
     # Two inputs can come in at any order, so try both
@@ -72,7 +74,7 @@ function compare_optimize_to_random(probname, K)
     # Use a consistent random number stream for the comparison
     seed = 42
 
-    random_scores = K_random_searches(f, x0, n, 500, seed)
+    random_scores = K_random_searches(f, x0, n, K, seed)
     scores, n_evals = main(probname, K, optimize, seed)
 
     if maximum(n_evals) > n
