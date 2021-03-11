@@ -28,7 +28,7 @@ In this project, you will be implementing a function `optimize` that minimizes a
 ## Deliverables
 
 ### Choose a programming language
-First, pick either Julia1.2+ or Python3.6+ as a programming language. Depending on your choice, go to `language.txt` and change `notalanguage` to either `julia` or `python`.
+First, pick either Julia1.5+ or Python3.6+ as a programming language. Depending on your choice, go to `language.txt` and change `notalanguage` to either `julia` or `python`.
 
 ### Complete the required code
 Second, if you chose Julia, go to `project1_jl/project1.jl` and complete the function `optimize`. If you chose Python, go to `project1_py/project1.py` and complete the function `optimize`.
@@ -42,7 +42,8 @@ If you chose Python, test your completed code by running:
 You should see `Pass: optimize does better than random search on [problem].` for all the simple problems.
 
 ### Prepare your README.pdf
-In addition to the programming aspect, you are also required to submit (also on gradescope) a PDF writeup, worth 50% of the assignment. It should contain the following information:- A description of the method(s) you chose.
+In addition to the programming aspect, you are also required to submit (also on gradescope) a PDF writeup, worth 50% of the assignment. It should contain the following information:
+- A description of the method(s) you chose.
 - A plot showing the path for Rosenbrock’s function with the objective contours and the path taken by your algorithm from three different starting points of your choice.
 - Convergence plots for the three simple functions (Rosenbrock’s function, Himmelblau’s function, and Powell’s function).
 
@@ -51,8 +52,8 @@ Fourth, create the zip file for your submission by running
 `bash ./make_submission.sh`
 
 ### Submit on Gradescope
-- Submit the created zip file `project1.zip` on `Gradescope/AA222/Project 1`
-- Submit your README.pdf on `Gradescope/AA222/Project 1 Writeup`
+- Submit the created zip file `project1.zip` on `Gradescope/AA222/Project1`
+- Submit your README.pdf on `Gradescope/AA222/Project1 Writeup`
 
 
 ## FAQ
