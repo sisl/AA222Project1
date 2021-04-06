@@ -45,7 +45,7 @@ You should see `Pass: optimize does better than random search on [problem].` for
 In addition to the programming aspect, you are also required to submit (also on gradescope) a PDF writeup, worth 50% of the assignment. It should contain the following information:
 - A description of the method(s) you chose.
 - A plot showing the path for Rosenbrock’s function with the objective contours and the path taken by your algorithm from three different starting points of your choice.
-- Convergence plots for the three simple functions (Rosenbrock’s function, Himmelblau’s function, and Powell’s function).
+- Convergence plots for the three simple functions (Rosenbrock’s function, Himmelblau’s function, and Powell’s function). Each plot should have the iterations on the x-axis and the function value on the y-axis. You can select a few initial points to start from (1-3) and plot them on top of one another. 
 
 ### Create the code submission
 Fourth, create the zip file for your submission by running
