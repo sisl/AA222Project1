@@ -71,7 +71,7 @@ Unlimited!
 Yes! In python, you can get around the assertion error by calling the `problem.nolimit()` method to allow infinite evaluations.
 
 #### How long does the autograder take to grade?
-It shouldn't take more than 5 minutes to grade. If your submission times-out during grading, please contact us on Piazza.
+It shouldn't take more than 5 minutes to grade. If your submission times-out during grading, please contact us on Ed.
 
 #### How are leaderboard scores computed?
 All of the problems are designed to have an optimal value of 0. The closer you are to 0, the closer you are to winning! The total score is the sum of all 5 problems (all of the problems are weighted the same).
