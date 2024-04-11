@@ -230,7 +230,7 @@ def test_optimize(optimize):
         if frac > 0.55:
             print('Pass: optimize does better than random search on %s %.3f pct of the time.' % (p.prob,frac*100))
         else:
-            print('Fail: optimize is only random search on %s %.3f pct of the time.' % (p.prob,frac*100))
+            print('Fail: optimize is only better than random search on %s %.3f pct of the time.' % (p.prob,frac*100))
 
     return
     
