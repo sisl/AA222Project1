@@ -177,14 +177,25 @@ def optimize_random(f, g, x0, n, count, prob):
 
 
 
-def test_optimize(optimize):
+def test_optimize(optimize, tests_to_run, n_trials):
     '''
     Tests optimize to ensure it returns a+b
     Args:
         optimize (function): function for adding a+b
     '''
+    tests = [Simple1, Simple2, Simple3]
+    if tests_to_run == "simple1":
+        tests = [Simple1]
+    elif tests_to_run == "simple2":
+        tests = [Simple2]
+    elif tests_to_run == "simple3":
+        tests = [Simple3]
 
-    for test in [Simple1, Simple2, Simple3]:
+    print(tests)
+    print(n_trials)
+    exit(-1)
+
+    for test in tests:
 
         p = test()
         print('Testing on %s...' % p.prob)
@@ -192,7 +203,7 @@ def test_optimize(optimize):
         # test random
         print('Testing random search...')
         fvals_random = []
-        for seed in tqdm(range(500)):
+        for seed in tqdm(range(n_trials)):
             p = test()
             np.random.seed(seed)
             x0 = p.x0()
@@ -204,7 +215,7 @@ def test_optimize(optimize):
         print('Testing optimize...')
         fvals_opt = []
         any_count_exceeded = False
-        for seed in tqdm(range(500)):
+        for seed in tqdm(range(n_trials)):
             p = test()
             np.random.seed(seed)
             x0 = p.x0()
