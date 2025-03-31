@@ -28,7 +28,7 @@ In this project, you will be implementing a function `optimize` that minimizes a
 ## Deliverables
 
 ### Choose a programming language
-First, pick either Julia1.7+ or Python3.6+ as a programming language. Depending on your choice, go to `language.txt` and change `notalanguage` to either `julia` or `python`.
+First, pick either Julia1.9+ or Python3.9+ as a programming language. Depending on your choice, go to `language.txt` and change `notalanguage` to either `julia` or `python`.
 
 ### Complete the required code
 Second, if you chose Julia, go to `project1_jl/project1.jl` and complete the function `optimize`. If you chose Python, go to `project1_py/project1.py` and complete the function `optimize`.
