@@ -12,7 +12,7 @@
 - `localtest.jl` runs tests on `project1_jl`
 - `make_submission.sh` is a shell script which will create a zip file for submission to gradescope (Unix).
 - `make_submission_gitbash.sh` is a shell script which will create a zip file for submission to gradescope (Windows GitBash + 7-Zip).
-- `make_submission.bat` is a batch script to create a zip file for submission to gradescope (Windows Command Prompt)
+- `make_submission.bat` is a batch file to create a zip file for submission to gradescope (Windows PowerShell + 7-Zip).
 
 
 ## Rules
@@ -44,8 +44,8 @@ You should see `Pass: optimize does better than random search on [problem].` for
 ### Create the code submission
 Fourth, create the zip file for your submission by running
 - On Unix: `bash ./make_submission.sh`
-- On Windows (with 7-Zip installed): `bash ./make_submission_gitbash.sh`
-- On Windows (without 7-Zip installed): `make_submission.bat`
+- On Windows (GitBash + 7-Zip): `bash ./make_submission_gitbash.sh`
+- On Windows (PowerShell + 7-Zip): `make_submission.bat`
 
 ### Prepare your README.pdf
 In addition to the programming aspect, you are also required to submit (also on gradescope) a PDF writeup, worth 50% of the assignment. It should contain the following information:
