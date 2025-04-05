@@ -193,7 +193,7 @@ def test_optimize(optimize, tests_to_run, n_trials):
 
     print(tests)
     print(n_trials)
-    exit(-1)
+    # exit(-1)
 
     for test in tests:
 
